@@ -28,15 +28,15 @@ export default function Header() {
   
   return (
     <header className={`sticky top-0 z-10 transition-colors duration-300 ${
-      scrolled ? 'bg-gray-900 bg-opacity-95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      scrolled ? 'bg-code-slate-900 bg-opacity-95 backdrop-blur-sm shadow-lg border-b border-code-slate-800' : 'bg-transparent'
     }`}>
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" passHref>
           <span 
-            className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 cursor-pointer"
+            className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-js-yellow-400 to-js-yellow-500 cursor-pointer"
             onClick={() => handleNavClick('Logo')}
           >
-            AlpineJS Summit
+            HelveticaJS Summit
           </span>
         </Link>
         
@@ -49,7 +49,7 @@ export default function Header() {
             >
               <span 
                 className={`transition-colors duration-300 ${
-                  router.pathname === item.path ? 'text-blue-400' : 'hover:text-blue-400'
+                  router.pathname === item.path ? 'text-js-yellow-400' : 'hover:text-js-yellow-400'
                 } cursor-pointer`}
                 onClick={() => handleNavClick(item.label)}
               >
@@ -62,7 +62,7 @@ export default function Header() {
         <div className="hidden md:block">
           <Link href="/#waitlist" passHref>
             <span 
-              className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full font-medium transition cursor-pointer inline-block"
+              className="bg-swiss-red-600 hover:bg-swiss-red-700 px-4 py-2 rounded-full font-medium transition cursor-pointer inline-block text-white"
               onClick={() => handleNavClick('Waitlist')}
             >
               Join Waitlist

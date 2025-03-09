@@ -50,30 +50,30 @@ export default function AboutSection() {
 
   // Check mark icon for feature list
   const CheckIcon = () => (
-    <svg className="h-6 w-6 text-blue-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <svg className="h-6 w-6 text-js-yellow-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
     </svg>
   );
 
   return (
-    <section id="about" className="py-20 bg-gray-900">
+    <section id="about" className="py-20 bg-code-slate-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-blue-400 font-medium">About the Conference</span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2">Why AlpineJS Summit?</h2>
+          <span className="text-js-yellow-400 font-medium">About the Conference</span>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2 text-white">Why HelveticaJS Summit?</h2>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-xl text-gray-300 mb-6">
-              AlpineJS Summit is Switzerland&apos;s answer to the growing JavaScript community in Europe. We&apos;re creating an intimate, focused experience that champions both technical excellence and community connection. 💙
+            <p className="text-xl text-code-slate-300 mb-6">
+              HelveticaJS Summit is Switzerland&apos;s answer to the growing JavaScript community in Europe. We&apos;re creating an intimate, focused experience that champions both technical excellence and community connection. 💛
             </p>
-            <p className="text-xl text-gray-300 mb-6">
+            <p className="text-xl text-code-slate-300 mb-6">
               Our one-day, single-track format ensures you won&apos;t miss any amazing content, while our pre-conference workshops and community meetup provide deeper learning and networking opportunities. Get ready for JS magic! ✨
             </p>
-            <div className="bg-indigo-900/50 rounded-lg p-6 border border-indigo-800">
-              <h3 className="text-xl font-semibold mb-3">Conference Format:</h3>
-              <ul className="space-y-2 text-gray-300">
+            <div className="bg-alpine-blue-900/50 rounded-lg p-6 border border-alpine-blue-800/30">
+              <h3 className="text-xl font-semibold mb-3 text-white">Conference Format:</h3>
+              <ul className="space-y-2 text-code-slate-300">
                 {conferenceFeatures.map((feature, index) => (
                   <li key={index} className="flex items-start">
                     <CheckIcon />
@@ -87,26 +87,29 @@ export default function AboutSection() {
               <Button 
                 href="/about" 
                 variant="tertiary"
+                className="text-js-yellow-400 hover:text-js-yellow-300"
               >
-                Learn more about AlpineJS Summit
+                Learn more about HelveticaJS Summit
               </Button>
             </div>
           </div>
           
-          <div className="bg-indigo-800/20 p-8 rounded-xl border border-indigo-700/30">
-            <h3 className="text-2xl font-bold mb-6">What Makes Us Different? 💫</h3>
+          <div className="bg-syntax-plum-900/20 p-8 rounded-xl border border-syntax-plum-700/30">
+            <h3 className="text-2xl font-bold mb-6 text-white">What Makes Us Different? 💫</h3>
             <div className="space-y-6">
               {differentiators.map((diff, index) => (
                 <div key={index} className="flex">
                   <div className={`flex-shrink-0 h-12 w-12 ${
-                    index === 0 ? 'bg-blue-600' : 
-                    index === 1 ? 'bg-purple-600' : 'bg-indigo-600'
-                  } rounded-full flex items-center justify-center mr-4`}>
+                    index === 0 ? 'bg-js-yellow-500' : 
+                    index === 1 ? 'bg-swiss-red-600' : 'bg-zurich-teal-600'
+                  } rounded-full flex items-center justify-center mr-4 text-white ${
+                    index === 0 ? 'text-code-slate-900' : 'text-white'
+                  }`}>
                     {diff.icon}
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold mb-1">{diff.title}</h4>
-                    <p className="text-gray-300">{diff.description}</p>
+                    <h4 className="text-lg font-semibold mb-1 text-white">{diff.title}</h4>
+                    <p className="text-code-slate-300">{diff.description}</p>
                   </div>
                 </div>
               ))}

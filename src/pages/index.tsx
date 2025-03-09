@@ -8,9 +8,9 @@ import WaitlistSection from '../components/home/WaitlistSection';
 
 export default function Home() {
   const seo = {
-    title: 'AlpineJS Summit 2026 | Swiss JavaScript Conference',
+    title: 'HelveticaJS Summit 2026 | Swiss JavaScript Conference',
     description: 'Join us for Switzerland\'s premier JavaScript conference in Zurich. One amazing day of JavaScript innovation, workshops, and community.',
-    url: 'https://alpinejs-summit.ch'
+    url: 'https://HelveticaJS-summit.ch'
   };
 
   return (

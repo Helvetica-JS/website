@@ -97,7 +97,7 @@ export default function Newsletter({ compact = false }: NewsletterProps) {
         <>
           <h3 className="text-xl font-bold mb-4">Stay in the loop! 🔔</h3>
           <p className="mb-4 text-gray-300">
-            Be the first to hear about speakers, workshops, and early-bird tickets for AlpineJS Summit 2026! Join our awesome community of JS enthusiasts!
+            Be the first to hear about speakers, workshops, and early-bird tickets for HelveticaJS Summit 2026! Join our awesome community of JS enthusiasts!
           </p>
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -135,7 +135,7 @@ export default function Newsletter({ compact = false }: NewsletterProps) {
           </svg>
           <h3 className="text-xl font-bold mb-2">You&apos;re on the list! 🎉</h3>
           <p className="text-gray-300">
-            Awesome! We&apos;ll keep you updated with all the latest AlpineJS Summit news. Get ready for some JavaScript magic!
+            Awesome! We&apos;ll keep you updated with all the latest HelveticaJS Summit news. Get ready for some JavaScript magic!
           </p>
           <button 
             onClick={() => setSuccess(false)}

@@ -1,10 +1,10 @@
-# AlpineJS Summit 2026 Conference Website
+# HelveticaJS Summit 2026 Conference Website
 
-This is the official website for AlpineJS Summit 2026, Switzerland's premier JavaScript conference happening in Zurich.
+This is the official website for HelveticaJS Summit 2026, Switzerland's premier JavaScript conference happening in Zurich.
 
 ## 🚀 Overview
 
-AlpineJS Summit is a one-day, single-track JavaScript conference featuring workshops, keynotes, technical sessions, and amazing networking opportunities. This repository contains the Next.js-based website for the conference.
+HelveticaJS Summit is a one-day, single-track JavaScript conference featuring workshops, keynotes, technical sessions, and amazing networking opportunities. This repository contains the Next.js-based website for the conference.
 
 ## 🛠️ Technology Stack
 
@@ -45,8 +45,8 @@ The website is built with a modular approach, with several reusable components:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-org/alpinejs-summit.git
-   cd alpinejs-summit
+   git clone https://github.com/your-org/HelveticaJS-summit.git
+   cd HelveticaJS-summit
    ```
 
 2. Install dependencies:
@@ -98,4 +98,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Contact
 
-For any questions about the conference, please contact info@alpinejs-summit.ch.
+For any questions about the conference, please contact info@HelveticaJS-summit.ch.

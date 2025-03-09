@@ -5,7 +5,7 @@ interface CardProps {
   icon?: React.ReactNode;
   tags?: string[];
   className?: string;
-  highlightColor?: 'blue' | 'purple' | 'green' | 'red' | 'amber' | 'cyan';
+  highlightColor?: 'alpine-blue' | 'syntax-plum' | 'zurich-teal' | 'swiss-red' | 'js-yellow' | 'code-slate';
 }
 
 // Define type for the color mapping
@@ -24,50 +24,50 @@ export default function Card({
   icon,
   tags = [],
   className = "",
-  highlightColor = "blue"
+  highlightColor = "alpine-blue"
 }: CardProps) {
-  // Define color map for different highlight colors
+  // Define color map for different highlight colors with our awesome new palette!
   const colorMap: ColorMap = {
-    blue: {
-      icon: "bg-blue-600/20 text-blue-400 group-hover:bg-blue-600 group-hover:text-white",
-      border: "hover:border-blue-500"
+    'alpine-blue': {
+      icon: "bg-alpine-blue-600/20 text-alpine-blue-400 group-hover:bg-alpine-blue-600 group-hover:text-white",
+      border: "hover:border-alpine-blue-500"
     },
-    purple: {
-      icon: "bg-purple-600/20 text-purple-400 group-hover:bg-purple-600 group-hover:text-white",
-      border: "hover:border-purple-500"
+    'syntax-plum': {
+      icon: "bg-syntax-plum-600/20 text-syntax-plum-400 group-hover:bg-syntax-plum-600 group-hover:text-white",
+      border: "hover:border-syntax-plum-500"
     },
-    green: {
-      icon: "bg-green-600/20 text-green-400 group-hover:bg-green-600 group-hover:text-white",
-      border: "hover:border-green-500"
+    'zurich-teal': {
+      icon: "bg-zurich-teal-600/20 text-zurich-teal-400 group-hover:bg-zurich-teal-600 group-hover:text-white",
+      border: "hover:border-zurich-teal-500"
     },
-    red: {
-      icon: "bg-red-600/20 text-red-400 group-hover:bg-red-600 group-hover:text-white",
-      border: "hover:border-red-500"
+    'swiss-red': {
+      icon: "bg-swiss-red-600/20 text-swiss-red-400 group-hover:bg-swiss-red-600 group-hover:text-white",
+      border: "hover:border-swiss-red-500"
     },
-    amber: {
-      icon: "bg-amber-600/20 text-amber-400 group-hover:bg-amber-600 group-hover:text-white",
-      border: "hover:border-amber-500"
+    'js-yellow': {
+      icon: "bg-js-yellow-500/20 text-js-yellow-600 group-hover:bg-js-yellow-500 group-hover:text-code-slate-900",
+      border: "hover:border-js-yellow-500"
     },
-    cyan: {
-      icon: "bg-cyan-600/20 text-cyan-400 group-hover:bg-cyan-600 group-hover:text-white",
-      border: "hover:border-cyan-500"
+    'code-slate': {
+      icon: "bg-code-slate-600/20 text-code-slate-400 group-hover:bg-code-slate-600 group-hover:text-white",
+      border: "hover:border-code-slate-500"
     }
   };
   
-  // Get color classes or fall back to blue
-  const colors = colorMap[highlightColor] || colorMap.blue;
+  // Get color classes or fall back to alpine-blue
+  const colors = colorMap[highlightColor] || colorMap['alpine-blue'];
   
   return (
-    <div className={`bg-gray-900 p-6 rounded-xl border border-gray-700 ${colors.border} transition group ${className}`}>
+    <div className={`bg-code-slate-900 p-6 rounded-xl border border-code-slate-700 ${colors.border} transition group ${className} cursor-pointer`}>
       {icon && (
         <div className={`h-14 w-14 rounded-lg mb-6 flex items-center justify-center ${colors.icon} transition`}>
           {icon}
         </div>
       )}
       
-      <h3 className="text-xl font-bold mb-3">{title}</h3>
+      <h3 className="text-xl font-bold mb-3 text-white">{title}</h3>
       
-      <p className="text-gray-400 mb-4">
+      <p className="text-code-slate-400 mb-4">
         {description}
       </p>
       
@@ -76,7 +76,7 @@ export default function Card({
           {tags.map((tag, index) => (
             <span 
               key={index} 
-              className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded"
+              className="text-xs bg-code-slate-800 text-code-slate-300 px-2 py-1 rounded"
             >
               {tag}
             </span>

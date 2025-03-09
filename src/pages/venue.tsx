@@ -3,9 +3,9 @@ import Button from '../components/ui/Button';
 
 export default function VenuePage() {
   const seo = {
-    title: 'Venue | AlpineJS Summit 2026',
-    description: 'Learn about the stunning venue for AlpineJS Summit 2026 in Zurich, Switzerland, and plan your visit with our accommodation and transportation tips.',
-    url: 'https://alpinejs-summit.ch/venue'
+    title: 'Venue | HelveticaJS Summit 2026',
+    description: 'Learn about the stunning venue for HelveticaJS Summit 2026 in Zurich, Switzerland, and plan your visit with our accommodation and transportation tips.',
+    url: 'https://HelveticaJS-summit.ch/venue'
   };
 
   const accommodations = [
@@ -90,7 +90,7 @@ export default function VenuePage() {
               <div>
                 <h2 className="text-3xl font-bold mb-6">The Tech Hub Zurich 🚀</h2>
                 <p className="text-xl text-gray-300 mb-6">
-                  We&apos;re thrilled to host AlpineJS Summit at the incredible Tech Hub Zurich, a state-of-the-art venue where innovation meets functionality!
+                  We&apos;re thrilled to host HelveticaJS Summit at the incredible Tech Hub Zurich, a state-of-the-art venue where innovation meets functionality!
                 </p>
                 <p className="text-xl text-gray-300 mb-6">
                   Located in the heart of Zurich&apos;s tech district, this amazing space features cutting-edge facilities, perfect acoustics, and a stunning rooftop terrace with panoramic views of the Alps. 🏔️
@@ -209,7 +209,7 @@ export default function VenuePage() {
             <div className="mt-16 text-center">
               <h2 className="text-3xl font-bold mb-4">Ready to join the JS party? 🎉</h2>
               <p className="text-xl text-gray-300 mb-8">
-                Secure your spot at AlpineJS Summit 2026 now!
+                Secure your spot at HelveticaJS Summit 2026 now!
               </p>
               <Button 
                 href="/#waitlist" 

@@ -78,7 +78,7 @@ export default function Layout({ children, seo = {} }: LayoutProps) {
         `}
       </Script>
       
-      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-indigo-900 text-white flex flex-col">
+      <div className="min-h-screen bg-gradient-to-b from-code-slate-900 to-syntax-plum-900 text-white flex flex-col">
         <Header />
         <main className="flex-grow">
           {children}

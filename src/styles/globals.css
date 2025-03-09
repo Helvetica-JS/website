@@ -3,25 +3,120 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light mode variables */
+  --background: #F8F9FC; /* code-slate-50 */
+  --foreground: #21242D; /* code-slate-900 */
+  --primary: #F7DF1E; /* js-yellow-500 */
+  --primary-foreground: #21242D; /* code-slate-900 */
+  --secondary: #3990FF; /* alpine-blue-500 */
+  --secondary-foreground: #FFFFFF;
+  --accent: #FF0000; /* swiss-red-500 */
+  --accent-foreground: #FFFFFF;
+  --muted: #E2E5ED; /* code-slate-200 */
+  --muted-foreground: #666F87; /* code-slate-600 */
+  --subtle: #0EBCB0; /* zurich-teal-500 */
+  --card: #FFFFFF;
+  --card-foreground: #21242D; /* code-slate-900 */
+  --popover: #FFFFFF;
+  --popover-foreground: #21242D; /* code-slate-900 */
+  --border: #D0D4E0; /* code-slate-300 */
+  --input: #D0D4E0; /* code-slate-300 */
+  --radius: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Dark mode variables */
+    --background: #21242D; /* code-slate-900 */
+    --foreground: #F1F2F6; /* code-slate-100 */
+    --primary: #F7DF1E; /* js-yellow-500 */
+    --primary-foreground: #21242D; /* code-slate-900 */
+    --secondary: #64B0FF; /* alpine-blue-400 */
+    --secondary-foreground: #21242D; /* code-slate-900 */
+    --accent: #FF6B6B; /* swiss-red-400 */
+    --accent-foreground: #FFFFFF;
+    --muted: #333848; /* code-slate-800 */
+    --muted-foreground: #A8AFBF; /* code-slate-400 */
+    --subtle: #2CDACE; /* zurich-teal-400 */
+    --card: #131519; /* code-slate-950 */
+    --card-foreground: #F1F2F6; /* code-slate-100 */
+    --popover: #131519; /* code-slate-950 */
+    --popover-foreground: #F1F2F6; /* code-slate-100 */
+    --border: #4B5066; /* code-slate-700 */
+    --input: #4B5066; /* code-slate-700 */
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom scrollbar - because details matter! */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+
+/* Typography enhancements for conference site */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  /* Gradients for section backgrounds */
+  .gradient-code {
+    background: linear-gradient(to bottom right, #21242D, #371764);
+  }
+  
+  .gradient-swiss {
+    background: linear-gradient(to bottom right, #21242D, #7A0000);
+  }
+  
+  /* JavaScript syntax highlighting inspired text */
+  .syntax-keyword {
+    color: #9355F1; /* syntax-plum-500 */
+  }
+  
+  .syntax-string {
+    color: #0EBCB0; /* zurich-teal-500 */
+  }
+  
+  .syntax-function {
+    color: #64B0FF; /* alpine-blue-400 */
+  }
+  
+  .syntax-comment {
+    color: #8792A8; /* code-slate-500 */
+  }
+  
+  /* JS Yellow highlight with proper contrast */
+  .highlight-js {
+    background-color: #F7DF1E; /* js-yellow-500 */
+    color: #21242D; /* code-slate-900 */
+    padding: 0.2em 0.4em;
+    border-radius: 0.25rem;
   }
 }

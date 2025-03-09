@@ -10,13 +10,13 @@ interface SEOProps {
 }
 
 export default function SEO({ 
-  title = 'AlpineJS Summit 2026 | Swiss JavaScript Conference',
+  title = 'HelveticaJS Summit 2026 | Swiss JavaScript Conference',
   description = 'Join us for Switzerland\'s premier JavaScript conference in Zurich. One amazing day of JavaScript innovation, workshops, and community.',
-  image = 'https://alpinejs-summit.ch/og-image.jpg',
-  url = 'https://alpinejs-summit.ch',
+  image = 'https://HelveticaJS-summit.ch/og-image.jpg',
+  url = 'https://HelveticaJS-summit.ch',
   children
 }: SEOProps) {
-  const fullTitle = title.includes('AlpineJS Summit') ? title : `${title} | AlpineJS Summit 2026`;
+  const fullTitle = title.includes('HelveticaJS Summit') ? title : `${title} | HelveticaJS Summit 2026`;
   
   return (
     <Head>

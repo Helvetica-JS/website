@@ -10,16 +10,16 @@ export default function Hero() {
   );
 
   return (
-    <section className="relative py-20 md:py-32 overflow-hidden">
+    <section className="relative py-20 md:py-32 overflow-hidden bg-code-slate-900">
       <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-20"></div>
       <div className="relative container mx-auto px-6 flex flex-col items-center text-center">
-        <span className="bg-blue-600 text-white text-sm font-medium px-3 py-1 rounded-full mb-6">
+        <span className="bg-zurich-teal-600 text-white text-sm font-medium px-3 py-1 rounded-full mb-6">
           Q1 2026 • Zurich, Switzerland
         </span>
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          AlpineJS Summit <span className="text-blue-400">2026</span>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
+          HelveticaJS Summit <span className="text-js-yellow-500">2026</span>
         </h1>
-        <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl">
+        <p className="text-xl md:text-2xl text-code-slate-300 mb-10 max-w-3xl">
           Switzerland&apos;s premier JavaScript conference arrives in Zurich! One amazing day of JS innovation, workshops, and community. 🚀
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
@@ -28,6 +28,7 @@ export default function Hero() {
             variant="primary" 
             size="lg"
             icon={<ArrowRightIcon />}
+            className="bg-swiss-red-600 hover:bg-swiss-red-700 text-white"
           >
             Join the Waitlist
           </Button>
@@ -35,6 +36,7 @@ export default function Hero() {
             href="#about" 
             variant="secondary" 
             size="lg"
+            className="bg-transparent border border-white hover:border-js-yellow-400 hover:text-js-yellow-400 text-white"
           >
             Learn More
           </Button>

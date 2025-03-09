@@ -4,9 +4,9 @@ import Newsletter from '../components/ui/Newsletter';
 
 export default function SchedulePage() {
   const seo = {
-    title: 'Schedule | AlpineJS Summit 2026',
-    description: 'Check out the exciting schedule for AlpineJS Summit 2026 - workshops, keynotes, and networking events all packed into an amazing JavaScript experience.',
-    url: 'https://alpinejs-summit.ch/schedule'
+    title: 'Schedule | HelveticaJS Summit 2026',
+    description: 'Check out the exciting schedule for HelveticaJS Summit 2026 - workshops, keynotes, and networking events all packed into an amazing JavaScript experience.',
+    url: 'https://HelveticaJS-summit.ch/schedule'
   };
 
   // Sample schedule data - this would be populated with real data closer to the event
@@ -178,7 +178,7 @@ export default function SchedulePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Schedule Sneak Peek! 🗓️</h1>
             <p className="text-xl text-gray-300 mb-8">
-              Here&apos;s our preliminary lineup for AlpineJS Summit 2026! This schedule will be updated as we confirm more amazing speakers.
+              Here&apos;s our preliminary lineup for HelveticaJS Summit 2026! This schedule will be updated as we confirm more amazing speakers.
             </p>
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function SchedulePage() {
                 <div className="sticky top-24">
                   <h2 className="text-3xl font-bold mb-6">What to Expect 🤩</h2>
                   <p className="text-gray-300 mb-6">
-                    AlpineJS Summit 2026 is jam-packed with JavaScript goodness! We&apos;ve got a full day of workshops before the main event, plus a community meetup to kick things off right.
+                    HelveticaJS Summit 2026 is jam-packed with JavaScript goodness! We&apos;ve got a full day of workshops before the main event, plus a community meetup to kick things off right.
                   </p>
                   <div className="space-y-4 mb-8">
                     <div className="flex items-center">

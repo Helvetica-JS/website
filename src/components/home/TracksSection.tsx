@@ -2,7 +2,7 @@ import Card from '../ui/Card';
 import Link from 'next/link';
 
 export default function TracksSection() {
-  // Conference tracks data
+  // Conference tracks data with our awesome new color mapping
   const tracks = [
     {
       title: 'Modern Frameworks',
@@ -13,7 +13,7 @@ export default function TracksSection() {
         </svg>
       ),
       tags: ['Next.js', 'React', 'Svelte', 'Vue'],
-      color: 'blue'
+      color: 'alpine-blue' // Updated color name
     },
     {
       title: 'Performance & Architecture',
@@ -24,7 +24,7 @@ export default function TracksSection() {
         </svg>
       ),
       tags: ['Vite', 'Webpack', 'Core Web Vitals'],
-      color: 'purple'
+      color: 'syntax-plum' // Updated color name
     },
     {
       title: 'Frontend AI & ML',
@@ -35,7 +35,7 @@ export default function TracksSection() {
         </svg>
       ),
       tags: ['TensorFlow.js', 'AI Tooling', 'ML Models'],
-      color: 'green'
+      color: 'zurich-teal' // Updated color name
     },
     {
       title: 'Web Platform',
@@ -46,7 +46,7 @@ export default function TracksSection() {
         </svg>
       ),
       tags: ['Web Components', 'WebGPU', 'WebAssembly'],
-      color: 'red'
+      color: 'swiss-red' // Updated color name
     },
     {
       title: 'Testing & DevOps',
@@ -57,7 +57,7 @@ export default function TracksSection() {
         </svg>
       ),
       tags: ['Jest', 'Playwright', 'CI/CD'],
-      color: 'amber'
+      color: 'js-yellow' // Updated color name
     },
     {
       title: 'Community & Career',
@@ -68,17 +68,17 @@ export default function TracksSection() {
         </svg>
       ),
       tags: ['Open Source', 'Tech Leadership', 'Communication'],
-      color: 'cyan'
+      color: 'code-slate' // Updated color name
     }
   ];
 
   return (
-    <section id="tracks" className="py-20 bg-gray-800">
+    <section id="tracks" className="py-20 bg-code-slate-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-blue-400 font-medium">Technical Awesomeness 🔥</span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2">Conference Tracks</h2>
-          <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
+          <span className="text-js-yellow-400 font-medium">Technical Awesomeness 🔥</span>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2 text-white">Conference Tracks</h2>
+          <p className="mt-4 text-xl text-code-slate-300 max-w-3xl mx-auto">
             Our single-track format is packed with the hottest developments in the JavaScript ecosystem. No FOMO - you&apos;ll catch every epic moment! ✨
           </p>
         </div>
@@ -91,14 +91,14 @@ export default function TracksSection() {
               description={track.description}
               icon={track.icon}
               tags={track.tags}
-              highlightColor={track.color as "blue" | "purple" | "green" | "amber" | "red" | "cyan"}
+              highlightColor={track.color as "alpine-blue" | "syntax-plum" | "zurich-teal" | "swiss-red" | "js-yellow" | "code-slate" | undefined}
             />
           ))}
         </div>
         
         <div className="mt-12 text-center">
           <Link href="/schedule" passHref>
-            <span className="text-blue-400 hover:text-blue-300 transition cursor-pointer inline-flex items-center">
+            <span className="text-js-yellow-400 hover:text-js-yellow-300 transition cursor-pointer inline-flex items-center">
               <span>Get a sneak peek at our session lineup</span>
               <svg className="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
